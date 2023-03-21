@@ -1,0 +1,18 @@
+.hd1
+{
+    font-family: 'Philosopher', sans-serif;
+}
+.works1
+{
+    font-family: 'Quicksand', sans-serif;
+}
+.searchSection1
+{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.cntBox
+{
+    /* border: 2px solid rgb(12, 40, 2); */
+    box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.364);
+}

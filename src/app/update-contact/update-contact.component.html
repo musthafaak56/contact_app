@@ -1,0 +1,39 @@
+<h1 class="text-center mt-4"><i class="fa-solid fa-users"></i></h1>
+<h1 class="hd1 text-center">Contact Manager</h1>
+<h2 class="text-center works1 mt-4">Update contact</h2>
+
+<div class="container mt-5 mb-5">
+    <div class="row d-flex">
+        <pre>
+            <!-- {{contactId}}
+            {{contactName}}
+            {{contactPhoto}} -->
+            {{contact|json}}
+            {{allRelations|json}}
+        </pre>
+        <div class="col-md-6">
+            <form action="" class="border border-2 rounded-5 p-4">
+                <label for="" class="mb-2 ms-2">Enter the below details</label>
+                <input [(ngModel)]="contact.id" name="contactId" type="text" class="form-control mb-2" placeholder="Enter Contact Id">
+                <input [(ngModel)]="contact.name" name="contactName" type="text" class="form-control mb-2" placeholder="Enter Contact Name">
+                <label for="photoUrl">https://cdn-icons-png.flaticon.com/512/21/21294.png</label>
+                <input [(ngModel)]="contact.photo" name="contactPhoto" type="text" class="form-control mb-2" placeholder="Enter Contact Photo url">
+                <input [(ngModel)]="contact.email" name="contactEmail" type="text" class="form-control mb-2" placeholder="Enter Contact Email">
+                <input [(ngModel)]="contact.phone" name="contactPhone" type="text" class="form-control mb-2" placeholder="Enter Contact Mobile">
+                <input [(ngModel)]="contact.company" name="contactCompany" type="text" class="form-control mb-2" placeholder="Enter Contact Company Name">
+                <input [(ngModel)]="contact.title" name="contactTitle" type="text" class="form-control mb-2" placeholder="Enter Contact Title">
+                <select [(ngModel)]="contact.relationId" name="relationId" class="form-control">
+                    <option value="" selected hidden disabled>Click Here to Select Relation</option>
+                    <option value={{relation.id}} *ngFor="let relation of allRelations">{{relation.name}}</option>
+                    <!-- <option value="">Family</option>
+                    <option value="">Company</option> -->
+                </select>
+                <a routerLink="/" class="btn btn-danger mt-4">Close</a>
+                <input (click)="updateContact()" type="button" value="Update" class="btn btn-success mt-4" style="float:right;">
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img class="image-icon mt-5 ms-5" [src]="contact.photo" alt="">
+        </div>
+    </div>
+</div>

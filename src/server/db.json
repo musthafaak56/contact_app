@@ -1,0 +1,77 @@
+{
+  "contact": [
+    {
+      "photo": "https://media.licdn.com/dms/image/D4D35AQEjAoJ8cQPmhA/profile-framedphoto-shrink_200_200/0/1657559597429?e=1679983200&v=beta&t=5pNyreS8W5h0PXAxhuZMmhinfBIHvgAcRyLoY4q4Efg",
+      "id": "1",
+      "name": "Musthafa abdul kadar",
+      "email": "musthafa@gmail.com",
+      "phone": "82818851272",
+      "company": "Luminar",
+      "title": "intern"
+    },
+    {
+      "photo": "https://media.licdn.com/dms/image/C5603AQF9OfANNlIh9g/profile-displayphoto-shrink_200_200/0/1661323865566?e=1684972800&v=beta&t=uipRqdxUYCUFSQmpZ7fJS-hnJoT1HytJzwwwp6hWTdU",
+      "id": "2",
+      "name": "Ditto Sunny",
+      "email": "ditto@gmail.com",
+      "phone": "298743864",
+      "company": "Luminar",
+      "title": "Intern",
+      "relationId": "3"
+    },
+    {
+      "photo": "https://media.licdn.com/dms/image/D5635AQFCS3hiF_rFww/profile-framedphoto-shrink_200_200/0/1668079343173?e=1679983200&v=beta&t=WnM5qVlht0oqZIj5lRMYZYr8YqPh7lcWQoooF5CI5YE",
+      "id": "3",
+      "name": "Muhammed Sinan",
+      "email": "sinan@gmail.com",
+      "phone": "348928273",
+      "company": "Luminar",
+      "title": "Intern",
+      "relationId": "3"
+    },
+    {
+      "photo": "https://media.licdn.com/dms/image/D5603AQHAtZmJ6voNgw/profile-displayphoto-shrink_200_200/0/1673339103769?e=1684972800&v=beta&t=hHPOR-yh6mS1sWcIrvmS5qyqNAwoB7d6z6ileUqzhSM",
+      "id": "4",
+      "name": "Muhammed Jowhar",
+      "email": "jowhar@gmail.com",
+      "phone": "43295645",
+      "company": "Luminar",
+      "title": "Intern",
+      "relationId": "3"
+    },
+    {
+      "photo": "https://media.licdn.com/dms/image/C4E03AQHQHu9kgdJkEA/profile-displayphoto-shrink_200_200/0/1662609871016?e=1684972800&v=beta&t=ZR5iGrHQVNrAcCDdyBiWFVfSEI-FvxN_LhFaziwz0OI",
+      "id": "5",
+      "name": "Muhammed Rashid",
+      "email": "rashid@gmail.com",
+      "phone": "856743283",
+      "company": "Luminar",
+      "title": "Intern",
+      "relationId": "3"
+    },
+    {
+      "relationId": "2",
+      "photo": "https://media.licdn.com/dms/image/D5635AQEDxNIYQet-bA/profile-framedphoto-shrink_200_200/0/1673678572090?e=1679983200&v=beta&t=bTk_tAlX3xoTvNumIuiyueT1UWzQgW3AgrO9b-S3E9Y",
+      "id": "6",
+      "name": "sujay sajeevan",
+      "email": "sujay@gmail.com",
+      "phone": "293478525",
+      "company": "Luminar",
+      "title": "Intern"
+    }
+  ],
+  "relation": [
+    {
+      "id": "1",
+      "name": "family"
+    },
+    {
+      "id": "2",
+      "name": "company"
+    },
+    {
+      "id": "3",
+      "name": "friend"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+.hd1
+{
+    font-family: 'Philosopher', sans-serif;
+}
+.works1
+{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 5rem;
+    color: white;
+}
+.img1
+{
+    position: absolute;
+    width: 100%;
+    top: -20%;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heading1
+{
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    z-index: 2;
+}
