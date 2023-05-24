@@ -21,7 +21,7 @@ export class UpdateContactComponent implements OnInit{
       console.log(data);
       this.contactId=data.contactId;
 
-      //call an api foe getting particular contact details
+      //call an api for getting particular contact details
       this.api.viewContact(this.contactId).subscribe((data:any)=>{
         console.log(data);//particular contact details
         this.contact=data;

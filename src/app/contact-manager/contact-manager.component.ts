@@ -9,22 +9,15 @@ import { ApiService } from 'src/services/api.service';
 })
 export class ContactManagerComponent implements OnInit{
 
-
   //display system date and time
   loginDate:any;
-
   // allContacts:any
   allContacts:MyContact[]=[];   //empty array declaration
-
-
   //searching
   searchKey:string='';
 
-  heading='Contact Details';
-
   constructor(private api:ApiService) { 
     this.loginDate=new Date();
-    
   }
 
 

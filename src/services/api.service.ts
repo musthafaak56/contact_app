@@ -10,40 +10,40 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
 
-  baseUrl:string ='http://localhost:3000/contact';
+  baseUrl:string ='https://contactapp-epa8.onrender.com';
   //function to get all contacts
   getAllContacts():Observable<MyContact>{
-    return this.http.get(this.baseUrl);
+    return this.http.get(`${this.baseUrl}/contact`);
   }
   //api call for fetch particular contact 
   viewContact(contactId:any)
   {
-    return this.http.get(`${this.baseUrl}/${contactId}`);
+    return this.http.get(`${this.baseUrl}/contact/${contactId}`);
   }
   //api call for fetch group name
   getRelationName(relationId:any){
-    return this.http.get(`http://localhost:3000/relation/${relationId}`)
+    return this.http.get(`${this.baseUrl}/relation/${relationId}`)
   }
 
   //function for fetch all groups from http://localhost: 3000/group
   getAllRelations(){
-  return this.http.get ('http://localhost:3000/relation')  
+  return this.http.get (`${this.baseUrl}/relation`)  
   }
 
   //function for adding new contact to server
   addContact (contactBody: any) {
-  return this.http.post(this.baseUrl,contactBody)
+  return this.http.post(`${this.baseUrl}/contact`,contactBody)
   }
 
   //function for delete a contact from server 
   deleteContact (contactId: any) {
-  return this.http.delete(`${this.baseUrl}/${contactId}`)
+  return this.http.delete(`${this.baseUrl}/contact/${contactId}`)
   }
 
   //function for updating an existing contact
 updateContact(contactId:any, contactBody: any){
 
-  return this.http.put(`${this.baseUrl}/${contactId}`,contactBody);
+  return this.http.put(`${this.baseUrl}/contact/${contactId}`,contactBody);
 
 }
 

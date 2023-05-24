@@ -5,25 +5,25 @@
 
 <div class="container">
     <div class="row d-flex justify-content-center">
-        
+
         <!-- system date and time -->
-        <p>Login Details: {{loginDate| date:'medium'}}</p>
+        <p>Login Time: {{loginDate| date:'medium'}}</p>
 
         <div class="col-md-10 my-4 mx-3">
             <p>Welcome to our contact manager website! Here, you can easily organize and manage all of your important contacts in one place.
 
                 To get started, simply create an account and log in. Once you're logged in, you can start adding contacts by clicking on the "Add Contact" button. You'll be prompted to enter the contact's name, phone number, email address, and any other relevant information.
-                
+
                 Once you've added your contacts, you can easily search for them using the search bar at the top of the page. You can also sort your contacts by name, date added, or other criteria.
-                
+
                 In addition to storing basic contact information, you can also add notes about each contact, set reminders for follow-up calls or meetings, and even attach files or documents related to that contact.
-                
+
                 Our website is designed to be easy to use and intuitive, but if you have any questions or need help with anything, please don't hesitate to contact our customer support team. We're here to help!
-                
+
                 Thank you for choosing our contact manager website to keep your contacts organized and easily accessible.</p>
         </div>
         <a class="btn btn-light btn-outline-dark col-md-5 mb-5" routerLink="/contact/add"><i class="fa-solid fa-user-plus me-2 py-2"></i>Add Contact</a>
-    
+
         <div class="row d-flex justify-content-center">
             <div class="searchSection1 col-md-7 p-5 mb-4">
                 <input (keyup)="search($event)" class="form-control" type="text" placeholder="Search Your Contact"><br>
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        
+
         <div class="container">
             <div class="row">
 
@@ -40,13 +40,13 @@
                         <div class="card-body cntBox bg-light bg-outline-dark p-4 rounded">
                             <img [src]="contact.photo" alt="" width="40%">
                             <ul class="list-group">
-                                <li class="list-group-item py-3">Name: {{contact.name}}   
+                                <li class="list-group-item py-3">Name: {{contact.name}}
                                     <!-- view   -->
                                     <a routerLink="/contact/view/{{contact.id}}" title="View"><i class="fa-solid fa-eye" style="float:right;"></i></a></li>
-                                <li class="list-group-item py-3">Email: {{contact.email}}   
+                                <li class="list-group-item py-3">Email: {{contact.email}}
                                     <!-- edit -->
                                     <a routerLink="/contact/update/{{contact.id}}" class="me-5" title="Edit"><i class="fa-solid fa-user-pen text-success" style="float:right;"></i></a></li>
-                                <li class="list-group-item">Mobile: {{contact.phone}}  
+                                <li class="list-group-item">Mobile: {{contact.phone}}
                                     <!-- delete -->
                                     <!-- <a routerLink="/contact/page-not-found" title="Delete"><i class="fa-solid fa-user-xmark text-danger" style="float:right;"></i></a> -->
                                     <button (click)="deleteContact(contact.id)" class="btn btn-transparent btn-outline-danger" title="Delete" style="float:right;"><i class="fa-solid fa-user-xmark" ></i></button>
